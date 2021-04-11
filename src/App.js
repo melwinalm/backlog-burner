@@ -1,12 +1,11 @@
 import TaskList from "./components/TaskList";
-import "./styles.css";
 
 export default function App() {
   return (
-    <div class="container m-4">
+    <div class="m-4">
       <div class="tile is-ancestor">
         <div class="tile is-vertical">
-          <div class="tile">
+          <div class="container tile" style={{ minHeight: "100vh" }}>
             <div class="tile is-parent">
               <article class="tile is-child notification is-danger">
                 <p class="title">Front Burner</p>
@@ -29,15 +28,3 @@ export default function App() {
     </div>
   );
 }
-
-/* <div className="container">
-      <div className="columns">
-        <div className="column">
-          
-        </div>
-        <div className="column">
-          
-          
-        </div>
-      </div>
-    </div> */
